@@ -10,7 +10,8 @@
     "prepublish": "npm run build",
     "test": "jest",
     "commit": "git-cz",
-    "release": "standard-version"
+    "release": "standard-version",
+    "publish": "git push --follow-tags origin master && npm publish"
   },
   "files": [
     "lib"
