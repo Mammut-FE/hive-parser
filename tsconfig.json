@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "out-ts",
+    "module": "commonjs",
+    "target": "es2015",
+    "lib": [
+      "es2015",
+      "dom"
+    ]
+  },
+  "include": [
+    "src"
+  ]
+}

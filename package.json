@@ -1,0 +1,76 @@
+{
+  "name": "@mammut-fe/hive-parser",
+  "version": "1.0.0",
+  "description": "hive parser",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "tsc -p tsconfig.build.json",
+    "prepublish": "npm run build",
+    "test": "jest",
+    "semantic-release": "semantic-release"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mammut-FE/hive-parser.git"
+  },
+  "keywords": [
+    "hive",
+    "parser",
+    "ast"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mammut-FE/hive-parser/issues"
+  },
+  "homepage": "https://github.com/Mammut-FE/hive-parser#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@types/jest": "^23.3.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.5.0",
+    "ts-jest": "^23.1.3",
+    "ts-loader": "^4.4.2",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "semantic-release": "^15.13.2"
+  },
+  "dependencies": {
+    "antlr4": "^4.7.1",
+    "antlr4-hive-javascript": "^1.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "globals": {
+      "te-jest": {
+        "tsConfigFile": "./testt/tsconfig.test.json"
+      }
+    }
+  }
+}
