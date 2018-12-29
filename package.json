@@ -11,7 +11,7 @@
     "test": "jest",
     "commit": "git-cz",
     "release": "standard-version",
-    "publish": "git push --follow-tags origin master && npm publish"
+    "publish": "git push --follow-tags origin master && npm publish --access=public"
   },
   "files": [
     "lib"
