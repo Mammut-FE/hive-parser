@@ -1,12 +1,12 @@
 {
   "name": "@mammut-fe/hive-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "hive parser",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "rm -rf lib && tsc -p tsconfig.build.json && cp src/typings.d.ts lib",
     "prepublish": "npm run build",
     "test": "jest",
     "commit": "git-cz",
