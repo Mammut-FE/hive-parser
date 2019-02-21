@@ -4,8 +4,8 @@
 
 ## Install
 
-```javascript
-npm i @mammut/hive-parser --save
+```
+npm i @mammut-fe/hive-parser --save
 ```
 
 ## Usage
