@@ -11,7 +11,7 @@ npm i @mammut-fe/hive-parser --save
 ## Usage
 
 ```javascript
-import { Parser } from '@mammut/hive-parser';
+import { Parser } from '@mammut-fe/hive-parser';
 
 const parser = new Parser();
 const node = parser.parse(`use database`);
